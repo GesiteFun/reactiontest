@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1><i class="fas fa-stopwatch"></i> REACTION TESTER</h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <span>Best Time</span>
+                    <span id="best-time">0.00</span>
+                </div>
+                <div class="stat-box">
+                    <span>Last Time</span>
+                    <span id="last-time">0.00</span>
+                </div>
+                <div class="stat-box">
+                    <span>Average</span>
+                    <span id="average-time">0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area" id="game-area">
+            <div class="target" id="target">
+                <i class="fas fa-crosshairs"></i>
+            </div>
+            <div class="message" id="message">
+                Click when the target turns GREEN!
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn"><i class="fas fa-play"></i> Start Test</button>
+            <button id="reset-btn"><i class="fas fa-redo"></i> Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
